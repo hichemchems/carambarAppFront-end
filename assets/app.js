@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnAjouterBlague = document.getElementById('ajouterBlagueBDD');
     const addJokeModal = document.getElementById('addJokeModal');
     const closeModalSpan = document.querySelector('.close-modal');
-    const newBlagueInput = document.getElementById('NewBlague');
+    const newBlagueInput = document.getElementById('NewBlague'); 
     const newResponseInput = document.getElementById('NewResponse');
     const ajoutBtn = document.getElementById('ajout-btn');
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Fonctions de la modale d'ajout de blague ---
     function openModal() {
-        addJokeModal.style.display = 'block';
+        addJokeModal.style.display = 'flex'; // Use flex to center the modal
     }
 
     function closeModal() {
