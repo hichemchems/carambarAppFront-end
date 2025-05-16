@@ -178,7 +178,23 @@ h1 {
 
 
 
+.btn-modal-trigger {
+    background-color: #fce73a; 
+    color: #f60b0b; 
+    border: 2px solid #d32f2f; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    box-shadow: #524d4d75 3px 2px 3px;
+}
 
+.btn-modal-trigger:hover {
+    background-color: #e1ea36; 
+    transform: translateY(-2px); 
+}
 
 
 /* Modal Overlay (Background Dimmer) */
@@ -233,6 +249,8 @@ h1 {
     flex-direction: column;
     align-items: center;
     padding-top: 0;
+    width: 100%;
+    background-color: gold;
 }
 
 .modal-content .AjouterBlagues h2 {
