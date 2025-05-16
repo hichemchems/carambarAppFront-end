@@ -155,12 +155,19 @@ h1 {
     background-color: #d32f2f;
 }
 
-.AjouterBlagues .btn-modal-trigger{
+.AjouterBlagues{
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 5%;
     flex-direction: column;
+    border: #e20a0a solide 2px;
+    width :12%;
+    border-radius: 12pt;
+    background-color: #e1ea36;
+    color: #ff0505;
+
 }
 
 
