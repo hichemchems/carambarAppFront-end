@@ -76,9 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const blagueValue = newBlagueInput.value.trim();
         const responseValue = newResponseInput.value.trim();
 
+        // Vérification si les champs sont vides
         if (blagueValue === '' || responseValue === '') {
-            alert('Veuillez remplir les deux champs : Blague et Réponse.');
-            return;
+            alert('Veuillez remplir tous les champs : Blague et Réponse.');
+            return; // Arrête l'exécution de la fonction si les champs sont vides
         }
 
         const newJokeNumber = blaguesQuestionReponse.length + 1;
@@ -89,6 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         console.log('Nouvelle blague ajoutée :', { question: `${newJokeNumber} ${blagueValue}`, reponse: responseValue });
         console.log('Liste des blagues mise à jour :', blaguesQuestionReponse);
+
+        // Réinitialiser les champs de la modale après l'ajout réussi
+        newBlagueInput.value = '';
+        newResponseInput.value = '';
 
         // Fermer la modale et afficher une nouvelle blague après l'ajout
         closeModal();
