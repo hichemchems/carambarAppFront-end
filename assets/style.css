@@ -249,7 +249,153 @@ label{
 
 
 
+/* Overlay de la modale (arrière-plan sombre) */
+.modal-overlay {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    /* background-color: rgba(0,0,0,0.6);  */
+    justify-content: center;
+    align-items: center;
+}
 
+/* Contenu de la modale */
+.modal-content {
+    border: #d92f2f solid 4px;
+    margin: auto;
+    padding: 4%;
+    border-radius: 12px;
+    width: 83%;
+    /* max-width: 80%; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+    background-color: gold;
+}
+
+/* Bouton de fermeture (la croix) */
+.close-modal {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Styles pour le formulaire dans la modale (reprise de AjouterBlagues) */
+.modal-content .AjouterBlagues {
+    display: flex;
+    flex-direction: column; /* Organise les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
+    padding-top: 0; /* Pas de padding-top ici, géré par le padding de modal-content */
+}
+
+.modal-content .AjouterBlagues label {
+    color: #ff0505;
+    margin: 10px 0 5px;
+    font-family: fangsong;
+    font-size: x-large;
+}
+
+.modal-content .AjouterBlagues input[type="text"] {
+    width: 90%;
+    font-size: large;
+    padding: 8px !important;
+    border-radius: 12pt !important;
+    border: 1px solid #e20a0a;
+    margin-bottom: 15px; 
+}
+
+.modal-content .AjouterBlagues #ajout-btn {
+    width: 30%; 
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50; 
+    color: #ffe500; 
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: #524d4d75 3px 2px 3px;
+}
+
+.modal-content .AjouterBlagues #ajout-btn:hover {
+    background-color: #e1ea36; /* Vert plus clair au survol */
+    color: #d92f2f;
+}
+
+/* Styles spécifiques pour le titre de la modale */
+.modal-content h2 {
+    color: #f60b0b; /* Rouge Carambar */
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Media query pour les petits écrans dans la modale */
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    .modal-content .AjouterBlagues input[type="text"] {
+        width: 95%;
+    }
+
+    .modal-content .AjouterBlagues #ajout-btn {
+        width: 50%;
+    }
+}
+/* 
+.footer-container{
+    width: 100%;
+    background-color: #fce73a;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.footer-btn-container{
+        width: 90%;
+}
+
+.btn-footer{
+    cursor: pointer;
+    border-style: hidden;
+    background-color: #fce73a;
+    width: 25%;
+    color: #f60b0b;
+    text-shadow: #524d4d75 3px 2px 3px;
+    font-size: 1rem;
+}
+
+.btn-footer:hover{
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+    
+} */
+
+
+
+
+
+
+/* 
 
 @media screen and (max-width: 600px) {
             
@@ -267,4 +413,4 @@ label{
             
     }
         
-}
+} */
