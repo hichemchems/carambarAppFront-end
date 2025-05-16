@@ -31,13 +31,29 @@
       </table>
       <button id="fermerPopup">Fermer</button>
     </div>
-    <div class ="AjouterBlagues">
+
+    <button id="ajouterBlagueBDD" class="btn-modal-trigger">Ajouter une blague</button>
+
+        <div id="addJokeModal" class="modal-overlay">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="AjouterBlagues">
+                    <h2>Ajouter une Nouvelle Blague</h2>
+                    <label for="NewBlague">Blague :</label>
+                    <input type="text" id="NewBlague" name="NewBlague"/>
+                    <label for="NewResponse">Réponse :</label>
+                    <input type="text" id="NewResponse" name="NewResponse"/>
+                    <button id="ajout-btn">Ajouter</button>
+                </div>
+            </div>
+        </div>
+    <!-- <div class ="AjouterBlagues">
       <label>Ajouter Blagues :</label>
       <input type="text" id="NewBlagues">
       <label>reponse :</label>
       <input type ="text" id= "NewResponse">
       <button id="ajout-btn">Ajouter</button>
-    </div>
+    </div> -->
     </section>
     </main>
     <footer>
